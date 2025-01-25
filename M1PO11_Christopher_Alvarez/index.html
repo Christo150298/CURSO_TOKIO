@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 11</title>
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Registro de usuarios</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            
+            <label>Género:</label>
+            <label for="masculino">
+                <input type="radio" id="masculino" name="genero" value="Masculino"> Masculino
+            </label>
+            <label for="femenino">
+                <input type="radio" id="femenino" name="genero" value="Femenino"> Femenino
+            </label><br><br>
+
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" name="contraseña" id="contraseña" required><br><br>
+
+            <label for="num_asignaturas">Número de asignaturas matriculadas:</label>
+            <input type="number" id="num_asignaturas" name="num_asignaturas" min="1" max="15"><br><br>
+
+            <label for="curso">Curso Matriculado:</label>
+            <select id="curso" name="curso">
+                <option value="FrontEnd">Curso Front End</option>
+                <option value="Java">Curso de Java</option>
+                <option value="FullStack">Curso Full Stack</option>
+                <option value="DataScience">Curso Data Science</option>
+            </select><br><br>
+
+            <p>¿Acepta las condiciones del registro?</p>
+            <label for="aceptar_condiciones">
+                <input type="checkbox" id="aceptar_condiciones" name="condiciones" value="acepto" required> Sí
+            </label>
+            <label for="rechazar_condiciones">
+                <input type="checkbox" id="rechazar_condiciones" name="condiciones" value="rechazo"> No
+            </label><br><br>
+
+            <div style="text-align: center;">
+                <input type="submit" value="Enviar">
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+</html>
