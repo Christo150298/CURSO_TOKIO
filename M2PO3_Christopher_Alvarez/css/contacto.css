@@ -1,0 +1,37 @@
+h1 {
+    font-size: 20px;
+    color: #333FFF;
+}
+form {
+    margin-top: 20px;
+}
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+form input {
+    width:20%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button-group button {
+    padding: 10px;
+    background-color: #888888;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-group button:hover {
+    background-color: #555555;
+}

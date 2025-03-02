@@ -56,6 +56,10 @@ main {
     margin-right: 20px;
     text-align: center;
 }
+main h1 {
+    font-size: 20px;
+    color:#333FFF;
+}
 #Fondo_cuidador {
     max-width: 100%;    
     height: auto;       
@@ -63,10 +67,12 @@ main {
 aside {
     border-radius: 3%;
     flex: 1;
-    background-color: #9b9daf;
+    background-color: #d3d7f3;
     padding: 30px;
 }
-aside h3 {
+aside h2 {
+    font-size: 15px;
+    color: #494949;
     margin-bottom: 15px;
 }
 aside form {
@@ -121,4 +127,21 @@ footer .social-media a {
 }
 .social-media a:hover {
     color: #4CAF50;
+}
+/* Diseño responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar-links {
+        flex-direction: column;
+        padding: 0;
+    }
+    .content {
+        flex-direction: column;
+    }
+    aside {
+        margin-top: 20px;
+    }
 }
