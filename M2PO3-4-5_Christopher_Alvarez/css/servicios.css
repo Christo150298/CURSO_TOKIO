@@ -8,6 +8,7 @@ h1 {
     border: 1px solid green;
     margin-top: 20px;
     background-color: #f9fff3;
+    margin-bottom: 20px;
 }
 .servicios-table th, 
 .servicios-table td {
@@ -24,8 +25,7 @@ h1 {
 .servicios-table tr:hover {
     background-color: #e8f5e9;
 }
-footer button {
-    margin-top: 10px;
+footer a {
     background-color: #5cb85c;
     color: white;
     border: none;
@@ -33,8 +33,9 @@ footer button {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-footer button:hover {
+footer a:hover {
     background-color: #4cae4c;
 }
