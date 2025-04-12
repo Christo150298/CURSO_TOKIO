@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURGER STORE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- NAVBAR -->
+    <ul class="nav justify-content-end d-flex p-2">
+        <li class="logo nav-item  flex-grow-1 fs-4">
+            <a class="nav-link text-dark" href="#">BURGER STORE</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="#">INICIO</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="#menu">MENU</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="#nosotros">NOSOTROS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="#contacto">CONTACTO</a>
+        </li>
+      </ul>
+       <!-- HERO -->
+       <div class="hero-blur mx-4">
+        <div class="hero-content">
+            Pura carne, puro sabor... y sí, te vas a manchar
+        </div>
+      </div>
+    <!--MENU-->
+    <div id="menu" class="d-flex justify-content-between m-4">
+        <div class="card" style="width: 20rem;">
+            <img src="/M2PO7_Christopher_Alvarez/img/burger1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tremenda</h5>
+              <p class="card-text">carne de 200g, queso ahumado, bacon crujiente, mayonesa de kimchi, lechuga y cebolla caramelizada.</p>
+              <a href="#" class="btn btn-dark">Ordenar</a>
+            </div>
+          </div>
+          <div class="card" style="width: 21rem;">
+            <img src="/M2PO7_Christopher_Alvarez/img/burger2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">California</h5>
+              <p class="card-text">150g de carne, guacamole casero, rúcula, queso gouda, cebolla crujiente y salsa tártara.</p>
+              <a href="#" class="btn btn-dark">Ordenar</a>
+            </div>
+          </div>
+          <div class="card" style="width: 21rem;">
+            <img src="/M2PO7_Christopher_Alvarez/img/burger3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pulled Beef</h5>
+              <p class="card-text">150g de carne, queso cheddar, 80g costillar a baja temperatura, salsa bbq y chucrut.</p>
+              <a href="#" class="btn btn-dark">Ordenar</a>
+            </div>
+          </div>
+          <div class="card" style="width: 21rem;">
+            <img src="/M2PO7_Christopher_Alvarez/img/burger4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Caja Negra</h5>
+              <p class="card-text">150g de carne, queso  ahumado, bacon crujiente, cebolla caramelizada, pepinillo y salsa caja negra.</p>
+              <a href="#" class="btn btn-dark">Ordenar</a>
+            </div>
+          </div>
+    </div>
+    <!--NOSOTROS-->
+    <div id="nosotros" class="m-4 p-3">
+        <h3 class="d-flex justify-content-center">Hamburgueseria en Santander</h3>
+        <p class="text-center d-flex justify-content-center">
+            La carne es la única protagonista de nuestras hamburguesas <br>
+            Descubre la excelencia en cada mordisco: la mejor carne de vaca sacrificada y <br>
+            marcada en Bandeira (Galicia). Una hamburguesa gourmet, pura <br>
+            esencia cárnica, sin añadidos. Máxima calidad respaldada por la minuciosa selección <br>
+            de proveedores de Cárnicas Luismi, tanto en España como en el extranjero. <br>
+            Un nombre reconocido en el sector cárnico, abasteciendo a los mejores restaurantes. <br>
+        </p>
+    </div>
+    <!--CONTACTO-->
+    <div id="contacto" class="m-4 p-3 d-flex justify-content-center">
+        <div class="w-100" style="max-width: 400px;">
+
+          <h3 class="text-center mb-4">Contáctanos</h3>
+      
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control form-control-sm" id="nombre" placeholder="Introduce tu nombre">
+          </div>
+      
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control form-control-sm" id="email" placeholder="Introduce un email">
+          </div>
+      
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control form-control-sm" id="telefono" placeholder="Introduce un teléfono">
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-dark">Enviar</button>
+          </div>
+        </div>
+      </div>
+      <!--FOOTER-->
+      <footer class="d-flex justify-content-center bg-dark text-white">By Christopher Alvarez</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
