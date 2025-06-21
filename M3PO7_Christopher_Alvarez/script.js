@@ -31,8 +31,8 @@ window.onload = function () {
         historialNumeros.push(numeroAleatorio);
 
         if (eleccion === numeroAleatorio) {
-            monedas += apuesta * 2;
-            alert(`¡Has acertado! Has ganado ${apuesta * 2} monedas.`);
+            monedas += apuesta;
+            alert(`¡Has acertado! Has ganado ${apuesta * 2} monedas. Te quedan ${monedas}.`);
         } else {
             monedas -= apuesta;
             alert(`Él numero que ha salido es el ${numeroAleatorio} Has perdido ${apuesta} monedas. Te quedan ${monedas}.`);
