@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Práctica 3</h1>
+
+    <div id="resultado"></div>
+
+    <script>
+
+        fetch("https://jsonplaceholder.typicode.com/photos?_limit=20")
+            .then(response => response.json())
+            .then(datos => {
+
+                const tabla = document.createElement("table");
+
+                const cabecera = document.createElement("tr");
+
+                const thAlbum = document.createElement("th");
+                const thTitulo = document.createElement("th");
+                const thImagen = document.createElement("th");
+
+                thAlbum.textContent = "ID del álbum";
+                thTitulo.textContent = "Título del álbum";
+                thImagen.textContent = "Imagen";
+
+                cabecera.appendChild(thAlbum);
+                cabecera.appendChild(thTitulo);
+                cabecera.appendChild(thImagen);
+
+                tabla.appendChild(cabecera);
+
+                datos.forEach(dato => {
+
+                    const fila = document.createElement("tr");
+                    
+                    const celdaAlbum = document.createElement("td");
+                    const celdaTitulo = document.createElement("td");
+                    const celdaImagen = document.createElement("td");
+
+                    celdaAlbum.textContent = "Álbum: " + dato.albumId + " | Registro: " + dato.id;
+                    celdaTitulo.textContent = dato.title;
+
+                    const imagen = document.createElement("img");
+                    imagen.src = dato.url;
+                    celdaImagen.appendChild(imagen);
+
+                    fila.appendChild(celdaAlbum)
+                    fila.appendChild(celdaTitulo)
+                    fila.appendChild(celdaImagen)
+
+                    tabla.appendChild(fila);
+
+                    document.getElementById("resultado").appendChild(tabla);
+
+                })
+            });
+    </script>
+
+</body>
+</html>
